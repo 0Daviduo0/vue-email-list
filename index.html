@@ -14,7 +14,9 @@
 <body>
 
     <div id="app">
-        <ul class="mailgen" v-for="email in genEmail"> {{ email }}  </ul>
+        <div class="email-container" v-if="genEmail.length < 11">
+            <ul class="mailgen" v-for="email in genEmail" > {{ email }}  </ul>
+        </div>
     </div>
     
 
