@@ -3,7 +3,8 @@ const { createApp } = Vue;
     createApp({
         data() {
             return {
-                genEmail: []
+                genEmail: [],
+                emailTot: "",
             }
         },
         methods : {
@@ -21,6 +22,7 @@ const { createApp } = Vue;
             }
 
             console.log(this.genEmail);
+            
 
         }
 
